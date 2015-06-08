@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="NewsFilter.SplashScreenCustom"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewsFilter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#bfbfbf" RenderTransformOrigin="0.476,0.506">
+        <Image Source="/Image/News.PNG" Height="455" Margin="443,101,502,212" VerticalAlignment="Center" Width="421"/>
+        <ProgressRing x:ConnectionId='1' x:Name="ProgressRing" Foreground="#0a5a95" IsActive="True" MaxHeight="50" MinHeight="50" MaxWidth="80"
+                      MinWidth="30" Margin="577,556,648,78" Width="141" Height="134"                                  RenderTransformOrigin="0.496,0.494" />
+    </Grid>
+</Page>
+

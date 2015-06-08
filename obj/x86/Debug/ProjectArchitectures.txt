@@ -1,0 +1,1 @@
+G:\대외활동\동덕여대SW경진대회2013\NewsFilter\NewsFilter\NewsFilter.csproj;x86

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JUN</Machine>
+    <WindowsUser>소정</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\NewsFilter.exe">
+      <PackagePath>NewsFilter.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\NewsFilter.pdb">
+      <PackagePath>NewsFilter.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft WCF Data Services\5.0\bin\Silverlight\System.Net.Json.dll">
+      <PackagePath>System.Net.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\mainlogo.png">
+      <PackagePath>Image\mainlogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\News.PNG">
+      <PackagePath>Image\News.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\splashBack.PNG">
+      <PackagePath>Image\splashBack.PNG</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\background.JPG">
+      <PackagePath>Image\background.JPG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\logo.jpg">
+      <PackagePath>Image\logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\splash.jpg">
+      <PackagePath>Image\splash.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\SplashScreenCustom.xaml">
+      <PackagePath>SplashScreenCustom.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

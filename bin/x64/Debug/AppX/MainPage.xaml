@@ -1,0 +1,166 @@
+﻿<Page
+    x:Class="NewsFilter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NewsFilter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <x:String x:Key="AppName">News Filter</x:String>
+    </Page.Resources>
+    
+    
+    <Page.BottomAppBar>
+        <AppBar Background="#E5FFFFFF" Height="50" BorderBrush="#E50A5A95">
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Width="200" Height="30" x:Name="txtBoxRegKeyword" Background="#FFBFBFBF" Margin="0,16" />
+                    <Button x:ConnectionId='1' Style="{StaticResource AddAppBarButtonStyle}" Tag="Add"                          BorderBrush="#FF0A5A95" Foreground="#FF0A5A95"/>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+
+
+        <!--<Grid.Resources>
+            <CollectionViewSource x:Name="CVS" IsSourceGrouped="False"/>
+            <CollectionViewSource x:Name="NVS" IsSourceGrouped="False"/>
+        </Grid.Resources>-->
+
+        <Grid.Background> 
+            <ImageBrush ImageSource="/Image/background.jpg"/>
+        </Grid.Background>
+
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Background="#FF0A5A95">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="161*"/>
+                    <ColumnDefinition Width="67*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="463*"/>
+                    <RowDefinition Height="177*"/>
+                </Grid.RowDefinitions>
+
+                <ProgressRing x:Name="ProgressRingKeyword" Foreground="White" IsActive="True" Margin="100,100,0,0" Width="50" Height="50" Visibility="Collapsed" Grid.Row="0" />
+                
+                <ListView x:ConnectionId='3' 
+                        x:Name="listViewKeyWords"
+                        Grid.Column="0"
+                        Margin="0,42,0,145"
+                        Padding="10,0,0,60"
+                        SelectionMode="None" 
+                        ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                        ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                                                              
+                        ItemsSource="{Binding}"
+                    IsSwipeEnabled="True"
+                    IsItemClickEnabled="True"
+                    ItemContainerStyle="{StaticResource ListViewItemStyle1}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="6">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+
+                                <StackPanel Grid.Column="1" Margin="10,0,0,0" Background="#FFBFBFBF" Width="300" Height="50" >
+
+                                    <TextBlock Grid.Column="1" Margin="0,15,0,0"
+                                               Text="{Binding keyword}" TextWrapping="NoWrap" Foreground="#FF0A5A95" HorizontalAlignment="Center" VerticalAlignment="Stretch" FontFamily="Verdana" FontWeight="Bold" FontSize="16" />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Button x:ConnectionId='4' Content="BookMark" HorizontalAlignment="Right" Margin="0,132,-2,42" Grid.Row="1" VerticalAlignment="Stretch" Background="#FFBFBFBF"                               Height="38" Width="103" RenderTransformOrigin="0.928,0.289" BorderBrush="#FFBFBFBF" Grid.ColumnSpan="2" Foreground="#FFE60D0D"/>
+                
+
+
+
+
+
+            </Grid>
+
+            <!-- 3. 우측영역 -->
+            <Grid Grid.Column="1" VerticalAlignment="Top" Margin="0,50,0,0">                
+                
+                <GridView Width="Auto"
+                          x:Name="gridviewContent" 
+                          ItemsSource="{Binding}"     
+                          ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                          ItemContainerStyleSelector="{Binding Mode=OneTime}"
+                          SelectionMode="None"
+                          ScrollViewer.HorizontalScrollBarVisibility="Hidden" Margin="34,-47,2,0"
+                            >                 
+                    <GridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </GridView.ItemsPanel>
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<StackPanel Orientation="Vertical" Width="350" Height="500" Margin="10,0,10,0" Background="#808000">
+                                <Image Source="{Binding imageStr}" Height="200" Stretch="Uniform"/>
+                                <TextBlock Text="{Binding headline}" TextWrapping="Wrap" Margin="0,10,0,10"/>
+                                <TextBlock Text="{Binding summary}" TextWrapping="Wrap" Margin="0,0,0,10" />
+                                <TextBlock Text="{Binding pubDate}"/>
+                            </StackPanel>-->
+                            <StackPanel Orientation="Vertical" Width="350" Height="600" Margin="7,0,7,0" Background="#FFBFBFBF">
+                                <Grid HorizontalAlignment="Left" Width="350" Height="300">
+                                    <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                                        <Image Source="{Binding imageStr, Mode=OneWay}" Stretch="UniformToFill" />
+                                    </Border>
+                                    <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                                        <TextBlock Text="{Binding headline}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextStyle}" Height="60" Margin="15,0,15,0"/>
+                                        <TextBlock Text="{Binding pubDate}" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource CaptionTextStyle}" TextWrapping="NoWrap" Margin="15,0,15,10"/>
+                                    </StackPanel>
+                                </Grid>
+                                <Grid Width="350" Height="300">
+                                    <StackPanel VerticalAlignment="Stretch" Orientation="Vertical">
+                                        <TextBlock Text="{Binding summary}" Foreground="#000000" TextWrapping="Wrap" Margin="5" Height="130" />
+                                        <TextBlock Text="{Binding publisher}" Foreground="#000000" Margin="5,5,0,5" Height="60"  />
+                                        <StackPanel Orientation="Horizontal" Height="Auto">
+                                            <Button x:ConnectionId='2' Style="{StaticResource ImageButtonStyle}"                             >
+                                                <Image Source="{Binding BookmarkImg}" Width="30" Margin="15,0,110,30" />
+                                            </Button>
+                                            <HyperlinkButton NavigateUri="{Binding unescapedUrl}" Style="{StaticResource AppBarButtonStyle}" FontFamily="Segoe UI Symbol" FontSize="18.667"
+                                                    Padding="8,8,0,0" Margin="110,0,0,10" Content="&#xE111;" Foreground="#000000"                                                    
+                                                     />
+                                            
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+
+                <ProgressRing x:Name="ProgressRingKeyword2" Foreground="#FF0A5A95" IsActive="True" Margin="0,0,200,100" 
+                              VerticalAlignment="Center" HorizontalAlignment="Center" Width="70" Height="170" Visibility="Collapsed" />
+                <TextBlock Margin="145,-13,815,0" TextWrapping="Wrap" Text="뉴스필터" VerticalAlignment="Top" FontSize="72" Foreground="#FF0A5A95" FontFamily="365break"/>
+                <Image Source="/Image/mainlogo.png" Height="135" Margin="10,-35,0,0" VerticalAlignment="Top" Width="135" HorizontalAlignment="Left"/>
+
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+
+</Page>
+

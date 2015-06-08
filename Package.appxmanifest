@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="6398b9e2-efca-496b-a906-c4c57ce18a16" Publisher="CN=소정" Version="1.1.0.0" />
+  <Properties>
+    <DisplayName>NewsFilter</DisplayName>
+    <PublisherDisplayName>소정</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="NewsFilter.App">
+      <m2:VisualElements DisplayName="NewsFilter" Description="NewsFilter" BackgroundColor="#0a5a95" ForegroundText="light" Square150x150Logo="Image\logo_w.png" Square30x30Logo="Image\logo_w_small.png">
+        <m2:DefaultTile Wide310x150Logo="Image\logo_w_big.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen BackgroundColor="#0A5A95" Image="Image\splashBack.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

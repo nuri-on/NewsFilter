@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JUN</Machine>
+    <WindowsUser>소정</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>625632080C7273F77DB76B018E14D6692C0D380B91B93C42EAA874EDC415C03D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6398b9e2-efca-496b-a906-c4c57ce18a16_1.0.0.0_neutral__q4x1gjbfe12mt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6398b9e2-efca-496b-a906-c4c57ce18a16_q4x1gjbfe12mt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6398b9e2-efca-496b-a906-c4c57ce18a16</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=소정</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-21T06:37:58.304</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\NewsFilter.exe">
+      <PackagePath>NewsFilter.exe</PackagePath>
+      <Modified>2013-08-21T06:37:58.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\NewsFilter.pdb">
+      <PackagePath>NewsFilter.pdb</PackagePath>
+      <Modified>2013-08-21T06:37:58.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft WCF Data Services\5.0\bin\Silverlight\System.Net.Json.dll">
+      <PackagePath>System.Net.Json.dll</PackagePath>
+      <Modified>2013-08-06T11:27:29.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\mainlogo.png">
+      <PackagePath>Image\mainlogo.png</PackagePath>
+      <Modified>2013-08-21T05:49:13.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\News.PNG">
+      <PackagePath>Image\News.PNG</PackagePath>
+      <Modified>2013-08-21T05:51:08.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\splashBack.PNG">
+      <PackagePath>Image\splashBack.PNG</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-21T05:51:23.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\background.JPG">
+      <PackagePath>Image\background.JPG</PackagePath>
+      <Modified>2013-08-21T05:49:13.745</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\logo.jpg">
+      <PackagePath>Image\logo.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-21T05:49:13.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\Image\splash.jpg">
+      <PackagePath>Image\splash.jpg</PackagePath>
+      <Modified>2013-08-21T05:49:13.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-08-20T15:14:17.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2013-08-21T06:24:36.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-08-21T06:21:34.140</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\SplashScreenCustom.xaml">
+      <PackagePath>SplashScreenCustom.xaml</PackagePath>
+      <Modified>2013-08-21T06:17:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\소정\Desktop\뉴스필터\NewsFilter\NewsFilter\NewsFilter\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-08-21T06:18:32.647</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

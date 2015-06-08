@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.0\extensionsdks\microsoft.vclibs\11.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="bd595aef-67da-8224-db71-3160f864fdc8" />
+    <ReferenceAssembly PathName="g:\대외활동\동덕여대sw경진대회2013\newsfilter\newsfilter\bin\x86\debug\system.net.json.dll" HashGuid="7f9bbfe1-3ea6-85c5-db08-1798fe395fe1" />
+    <ReferenceAssembly PathName="g:\대외활동\동덕여대sw경진대회2013\newsfilter\packages\winrtxamltoolkit.1.5.2.0_n\lib\netcore45\winrtxamltoolkit.dll" HashGuid="4f8063ac-f3f8-f43e-15ad-08fab3cde2b8" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
